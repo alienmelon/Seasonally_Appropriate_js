@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>example</title>
+
+<script src="seasonally_appropriate.js"></script>
+	
+	<style>
+		body{
+			color:white;
+			background-color: black;
+			font-size: 40px;
+		}
+		
+		#test{
+			/*center*/
+			position: absolute;
+  			top: 50%;
+  			left: 50%;
+  			transform: translate(-50%, -50%);
+		}
+		
+		#test2{
+			position:absolute;
+			bottom:0px;
+		}
+	</style>
+	
+	<script>
+		function stop_and_clear(){
+			stop_snowing();
+			//
+			document.getElementById("test").innerHTML = "It's not snowing on this website :(";
+			document.getElementById("test2").innerHTML = ":(";
+		};
+	</script>
+	
+</head>
+
+<body onLoad = "start_snowing(50, 10, 5);">
+	
+	<div id="test">
+		It's snowing on this website!
+	</div>
+	
+	<div id="test2" onclick="stop_and_clear()">
+		Click here to stop snowing.
+	</div>
+	
+</body>
+</html>

@@ -1,0 +1,9 @@
+Please enjoy this seasonally appropriate javascript.
+It spawns snow, but can also be used for leaves, rain (give it a high fall speed), and falling skulls, or raining flames!
+Images are included in the seasonal_js_img folder, where you can replace them with your own snow graphics.
+
+You can adjust wind velocity, and snow amount, and the falling speed!
+
+You can also make it stop snowing with the clear weather stop_snowing() function.
+
+To start snowing call start_snowing(50, 10, 5); in your page's onload or on an elements click event, and adjust it with your desired values...
